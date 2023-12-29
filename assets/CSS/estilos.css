@@ -20,6 +20,82 @@
   
 }
 
+
+.encabezado{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 2.3) ;
+  display: flex;
+ position: relative;
+  width: auto;  
+background-color: #c7c7c7;
+height: 150px;
+
+}
+
+.encabezado>.logo_contenedor{
+  position: absolute;
+ left: 240px;
+ bottom: 70px;
+}
+
+.encabezado>.logo_contenedor>.logo{
+position: relative;
+  justify-content:center;
+  align-items: center;
+
+   width: 250px;
+    height: 60px;
+    
+    border-bottom: 8px solid #713112;
+   border-top: 8px solid #713112;
+    background-color:#c7c7c7;
+  
+}
+
+.logo>.Nombre_Empresa{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 2rem;
+    font-weight: 60px;
+    color: black;
+   margin-left: 5px;
+   text-shadow: 8px 2px 5px rgba(45, 44, 44, 0.8);
+}
+
+.logo>.sub_Nombre{
+  font-family: 'Source Serif 4', serif;
+    font-size: 25px;
+    font-weight: 60px;
+   color: rgb(244, 240, 240);
+   text-shadow: 12px 3px 3px rgba(34, 30, 30, 0.8);
+   margin-top: 5px;
+   margin-top:15px;
+   margin-left: 10px;
+}
+
+.encabezado>.contactos_contenedor{
+  position: absolute;
+  align-items: center;
+
+  height: 120px;
+  top: 20px;
+  right: 120px;
+}
+/* 
+.contactos_contenedor>.social_titulo{
+ font-size: 30px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin-top: 10px;
+gap: 30px;
+}
+
+.contactos_contenedor>.contenedor_nav>.nav{
+  margin-top: 20px;
+justify-content:center;
+gap: 35px;
+} */
+
+/*/////////////////////////////////////////////////////////////////////*/
+
+
 .navbar{
   box-shadow: 0 0 15px rgba(0, 0, 0, 1.3);
 }
@@ -214,60 +290,34 @@ align-items: center;
 
 .inferior {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: 260px;
+  height: 70px;
   /* height: auto; Cambiado a 'auto' para permitir un tamaño dinámico basado en el contenido */
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 width: auto;
   background-color: gray; 
   padding: 10px;
   flex-wrap: wrap; /* Permite el ajuste dinámico en varias líneas en dispositivos pequeños */
-}
-
-.inferior>.informaciones{
-    height: 80%;
-    width: 50%; 
-}
-.inferior>.informaciones>.dato{
-margin: 10px;
-align-items: center;
-font-family: 'Source Serif 4', serif;
-font-size: 13px;
+  gap: 50px;
 }
 
 
-.inferior>.Redes{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80%;
-  width: 50%;
-}
-h6{
- margin: 250px;
+.inferior>.social_titulo{
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ margin-top: 10px;
+ gap: 30px;
+ }
  
-}
-.list-unstyled{
-  margin: 40px;
-  width: 80%;
-  align-items: center;
-}
-.list-unstyled>li{
-margin: 20px;
-margin-left: 20px;
-}
-/* Estilos para el enlace de correo electrónico */
-.Redes>aside>ul>li>.letra {
- text-decoration: none;
- font-size: 16px;
-  color: #000
+ .inferior>.contenedor_nav>.nav{
+  
+ justify-content:center;
+ gap: 35px;
  }
+ 
 
- .Redes>aside>ul>li>.letra:hover{
-color: #390285;
-  text-decoration:underline;
- }
+
 .sobrita{
   box-shadow: 0 0 5px gray;
   height: 55px;
